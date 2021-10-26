@@ -1,8 +1,8 @@
 [
-    {"pk": 1, "model": "projects.project", "fields": {"name": "example1", "description": "Website in image does not belong to user. Used for example only", "price": 10.00, "rating": 5, "images" : "../media/ex1.jpg"}},
-    {"pk": 2, "model": "projects.project", "fields": {"name": "example2", "description": "Website in image does not belong to user. Used for example only", "price": 11.00, "rating": 6, "images" : "../media/ex2.jpg"}},
-    {"pk": 3, "model": "projects.project", "fields": {"name": "example3", "description": "Website in image does not belong to user. Used for example only", "price": 12.00, "rating": 7, "images" : "../media/ex3.jpg"}},
-    {"pk": 4, "model": "projects.project", "fields": {"name": "example4", "description": "Website in image does not belong to user. Used for example only", "price": 13.00, "rating": 8, "images" : "../media/ex4.jpg"}},
-    {"pk": 5, "model": "projects.project", "fields": {"name": "example5", "description": "Website in image does not belong to user. Used for example only", "price": 14.00, "rating": 9, "images" : "../media/ex5.jpg"}},
-    {"pk": 6, "model": "projects.project", "fields": {"name": "example6", "description": "Website in image does not belong to user. Used for example only", "price": 15.00, "rating": 10, "images" : "../media/ex6.jpg"}}
+    {"pk": 1, "model": "projects.project", "fields": {"sku": "1", "name": "example1", "description": "Website in image does not belong to user. Used for example only", "price": 10.00, "rating": 5, "images" : "../media/ex1.jpg"}},
+    {"pk": 2, "model": "projects.project", "fields": {"sku": "2", "name": "example2", "description": "Website in image does not belong to user. Used for example only", "price": 11.00, "rating": 6, "images" : "../media/ex2.jpg"}},
+    {"pk": 3, "model": "projects.project", "fields": {"sku": "3", "name": "example3", "description": "Website in image does not belong to user. Used for example only", "price": 12.00, "rating": 7, "images" : "../media/ex3.jpg"}},
+    {"pk": 4, "model": "projects.project", "fields": {"sku": "4", "name": "example4", "description": "Website in image does not belong to user. Used for example only", "price": 13.00, "rating": 8, "images" : "../media/ex4.jpg"}},
+    {"pk": 5, "model": "projects.project", "fields": {"sku": "5", "name": "example5", "description": "Website in image does not belong to user. Used for example only", "price": 14.00, "rating": 9, "images" : "../media/ex5.jpg"}},
+    {"pk": 6, "model": "projects.project", "fields": {"sku": "6", "name": "example6", "description": "Website in image does not belong to user. Used for example only", "price": 15.00, "rating": 10, "images" : "../media/ex6.jpg"}}
 ]
