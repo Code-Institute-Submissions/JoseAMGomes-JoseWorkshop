@@ -38,6 +38,10 @@ body {
     color: white;
 }
 
+.center {
+   text-align: center;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -61,7 +65,7 @@ body {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 95%;
   }
 }
 
