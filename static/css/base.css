@@ -75,6 +75,10 @@ body {
     background: #222;
     color: white;
 }
+.btt-link,
+.remove-item {
+    cursor: pointer;
+}
 
 .text-black {
     color: #000 !important;
