@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Project
+from .forms import ProjectForm
 # Create your views here.
 
 def all_projects(request):
@@ -59,3 +60,13 @@ def project_detail(request, project_id):
     }
 
     return render(request, 'projects/project_detail.html', context)
+
+def add_project(request):
+    """ Add a project to the store """
+    form = ProjectForm()
+    template = 'projects/add_project.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
