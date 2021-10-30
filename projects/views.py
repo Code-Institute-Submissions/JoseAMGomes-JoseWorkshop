@@ -62,8 +62,18 @@ def project_detail(request, project_id):
     return render(request, 'projects/project_detail.html', context)
 
 def add_project(request):
-    """ Add a project to the store """
-    form = ProjectForm()
+    """ Add a project """
+    if request.method == 'POST':
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added project!')
+            return redirect(reverse('add_project'))
+        else:
+            messages.error(request, 'Failed to add project. Please ensure the form is valid.')
+    else:
+        form = ProjectForm()
+        
     template = 'projects/add_project.html'
     context = {
         'form': form,
