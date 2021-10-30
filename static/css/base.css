@@ -20,6 +20,13 @@ body {
     text-align: center;
     color: white;
 }
+.card{
+    margin: 50px auto;
+    min-width: 90%;
+}
+.make-underline{
+    text-decoration: underline ;
+}
 
 /* from Bulma */
 .icon {
@@ -93,9 +100,7 @@ body {
 .remove-item {
     cursor: pointer;
 }
-hr {
-    color: blue;
-}
+
 .text-black {
     color: #000 !important;
 }
