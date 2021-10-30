@@ -30,7 +30,7 @@
                                     <img class="card-img-top img-fluid" src="{{ project.images.url }}" alt="{{ project.name }}">
                                 </a>
                                 {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'project_detail' project.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ project.name }}">
                                 </a>
                                 {% endif %}
@@ -45,6 +45,12 @@
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ project.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
+                                            {% endif %}
+                                            {% if request.user.is_superuser %}
+                                            <small class="ml-3">
+                                                <a href="{% url 'edit_project' project.id %}">Edit</a> | 
+                                                <a class="text-danger" href="{% url 'delete_project' project.id %}">Delete</a>
+                                            </small>
                                             {% endif %}
                                         </div>
                                     </div>

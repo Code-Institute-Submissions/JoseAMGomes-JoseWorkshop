@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 html {
     height: 100%;
 }
@@ -8,6 +11,14 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+.container-home{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
 }
 
 /* from Bulma */
@@ -22,33 +33,36 @@ body {
 .logo-font {
     text-transform: uppercase;
 }
-
+.font-main-title{
+    font-family: Dancing Script;
+}
 .main-logo-link {
     width: fit-content;
 }
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: blue;
     min-width: 260px;
+    margin-top: 40px;
 }
 
 .btn-black {
     background: black;
-    color: white;
+    color: blue;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-blue {
     background: black;
-    color: white !important;
+    color: blue !important;
+    border: 1px solid blue;
+}
+
+.btn-outline-blue:hover,
+.btn-outline-blue:active,
+.btn-outline-blue:focus {
+    background: blue;
+    color: black !important;
 }
 
 
@@ -73,19 +87,24 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: blue;
 }
 .btt-link,
 .remove-item {
     cursor: pointer;
 }
-
+hr {
+    color: blue;
+}
 .text-black {
     color: #000 !important;
 }
+.text-white {
+    color: #fff;
+}
 
-.border-black {
-    border: 1px solid black !important;
+.border-blue {
+    border: 1px solid blue !important;
 }
 /* ------------------------------- bootstrap toasts */
 
@@ -111,7 +130,7 @@ body {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: blue;
     border-radius: 0;
 }
 
@@ -135,7 +154,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
+    background-color: blue;
     border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -149,8 +168,8 @@ body {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: blue;
+    border-color:blue;
 }
 
 .allauth-form-inner-content a {
@@ -239,5 +258,37 @@ body {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-blue.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-blue.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
