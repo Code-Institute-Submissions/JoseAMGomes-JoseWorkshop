@@ -1,108 +1,310 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome JoseAMGomes,
+#JOSEWORKSHOP website
+[View the live project!](https://joseworkshop.herokuapp.com/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website was created for my forth milestone project and its goal is to provide an easy and elegant way of finding and buying interfaces.
+## User Experience (UX)
+ ### User Stories
+     
+    1.1- As a costumer 
+        1.1.1- I need to view a list of projects;
+        1.1.2- I need to view indivudual project details;
+        1.1.3- I need to know how much is in my shopping bag going to cost me as a navigate through website;
+        1.1.4- I need to sort a list of projects;
+        1.1.5- I need to search a project by name or description;
+        1.1.6- I need to see what projects I have in shopping bag;
+        1.1.7- I need to be able to pay without complications;
+        1.1.8- I need to view an order confirmation after making the payment;
+        1.1.9- I want to easily recognise what the website is about;
+        1.1.10- I need to navigate easily and fluidly through the website;
+    
+    1.2- As a user
+        1.2.1- I must be able to sign in and out together with register without problems with warnings in case any errors are made;
+        1.2.2- I want to recover my password in case i forget it;
+        1.2.3- I want to receive an email after registering;
+        1.2.4- I want to be able to see my order history;
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+    1.3- As an owner
+        1.3.1- I want to add, edit and remove projects;
+    
+2.1-Homepage Wireframe
+[Home Desktop Wireframe](https://share.balsamiq.com/c/dGPZyL1vLp6BsEsih4piae.png)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+2.2-projects page Wireframe
+[projects Desktop Wireframe](https://share.balsamiq.com/c/6rvDUUcwwGCVdPmbsBTErM.png)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+2.3-My Account page Wireframe
+[My Account Desktop Wireframe](https://share.balsamiq.com/c/rb6T1zzqTRFR7heJCWewfN.png)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Design
 
-A blue button should appear to click: _Make Public_,
+    3.1- Color Scheme
+    The colors used are black and white and blue.
 
-Another blue button should appear to click: _Open Browser_.
+    3.2- Typography
+    In this website the home page title is written in dancing script while all the other text is Lato. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    3.3- Images
+    The included in the website to give context and information do not belong to the user including the actual projects that thet portray. They are used for example purposes only.
+## Features
 
-To log into the Heroku toolbelt CLI:
+    4.1- Website designed to be responsive on all sizes;
+    4.2- Website uses font awesome to make the looks more appealing and functional.
+    4.3- All CRUD (Create, Read, Update, Delete) are working together with a search funtionality that is key to any website.
+    4.4- All static files are saved in s3.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Technologies Used
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Languages Used
 
-------
+    5.1- HTML5;
+   
+    5.2- CSS3;
 
-## Release History
+    5.3- Javascript
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    5.4- Python3
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Frameworks, Libraries and Programs Used
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    6.1- Bootstrap 4.4.1:
+    Used to style and make website responsive;
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    6.2- Javascript:
+    Used to initialize some components;
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    6.3- Google Fonts:
+    Used to import Dancing Script;
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    6.4- jQuery:
+    Used to make navigation bar responsive and make the dropdown button work together with some materialize options;
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    6.5- GitHub:
+    Used to store and manage the project;
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    6.6- Balsamiq:
+    Used to create my Wireframes;
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    6.7-Django:
+    Used to make all the project;
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    6.8- Heroku:
+    Used to deploy project;
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    6.9- s3:
+    Used to save static files;
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The website's code passed both W3C HTML5 test and CSS3 test.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Testing User Stories
+1.1.1- I need to view a list of projects;
+    Test #: 1
+    Action Taken: Went to projects page.
+    ﻿"After" State: All projects shown.
+    ﻿Test Result: Successful.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1.1.2- I need to view indivudual project details;
+    Test #: 1
+    Action Taken:  Pressed image on projects.
+    ﻿"After" State: Project details page opened
+    ﻿Test Result: Successful
 
-------
+1.1.3- I need to know how much is in my shopping bag going to cost me as a navigate through website;
+    Test #: 1
+    Action Taken:  Added a project and roamed through all pages.
+    ﻿"After" State: Shopping bag amount remained correct on all pages
+    ﻿Test Result: Successful
 
-## FAQ about the uptime script
+1.1.4- I need to sort a list of projects;
+    Test #: 1
+    Action Taken:  Pressed sort by rating.
+    ﻿"After" State: All projects were shown sorted by rating
+    ﻿Test Result: Successful
 
-**Why have you added this script?**
+    Test #: 2
+    Action Taken:   Pressed sort by price.
+    ﻿"After" State:  All projects were shown sorted by price
+    ﻿Test Result: Successful
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+1.1.5- I need to search a project by name or description;
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    Test #: 1
+    Action Taken:  Checked if no results were found page would crash.
+    ﻿"After" State: No reviews shown but page works as intended
+    ﻿Test Result: Successful
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    Test #: 2
+    Action Taken:  Searched for example1
+    ﻿"After" State: Project with example1 in name was found.
+    ﻿Test Result: Successful
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+1.1.6- I need to see what projects I have in shopping bag;
+    Test #: 1
+    Action Taken:  Pressed shoping bag icon.
+    ﻿"After" State: All projects on shopping bag were listed correctly
+    ﻿Test Result: Successful
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1.1.7- I need to be able to pay without complications;
 
-**Can I opt out?**
+    Test #: 1
+    Action Taken:  Tried payment funtionality.
+    ﻿"After" State: Order details shown in the end after successfully paying.
+    ﻿Test Result: Successful
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+1.1.8- I need to view an order confirmation after making the payment;
+    As tested before
+    Test #: 1
+    Action Taken:  Tried payment funtionality.
+    ﻿"After" State: Order details shown in the end after successfully paying.
+    ﻿Test Result: Successful
+1.1.9- As a user I want to easily recognise what the website is about.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    Home page clealy explains what the purpose of the website is.
+    
+    Test #: 1
+    Action Taken: Tried link "go" in home page.
+    ﻿"After" State: Taken to projects page.
+    ﻿Test Result: Successful
+    
+1.1.10- I need to navigate easily and fluidly through the website;
 
-**Anything more?**
+    All Navigator links work perfectly and are responsive. Turns into dropdown menu when it is supose to;
+    
+    Test #: 
+    Action Taken: Click on all links in Nav bar
+    ﻿"Before" State: No hoover or change.
+    ﻿"After" State: Correct HTMLs were loaded.
+    ﻿Test Result: Successful
+    
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+1.2.1- I must be able to sign in and out together with register without problems with warnings in case any errors are made;
 
-Happy coding!
+    Register is working as intended and in case of error it gives a warning massage.
+
+    Test #: 1
+    Action Taken: Tried pressing register:
+    ﻿"After" State: Register page opened
+    ﻿Test Result: Successful
+
+    Test #: 2
+    Action Taken: Tried registering new account
+    ﻿"After" State: new user was created message received
+    ﻿Test Result: Successful
+
+    Test #: 3
+    Action Taken: Tried submiting with empty fields
+    ﻿"After" State: "Please fill out this field" message received on whatever field is blank.
+    ﻿Test Result: Successful
+
+    Test #: 4
+    Action Taken: Tried submiting with previously used fields on other users
+    ﻿"After" State: Expected warning provided.
+    ﻿Test Result: Successful
+
+1.2.2- I want to recover my password in case i forget it;
+    Test #: 1
+    Action Taken:  Clicked recover password.
+    ﻿"After" State: Funtionality went through as intended
+    ﻿Test Result: Successful
+
+1.2.3- I want to receive an email after registering;
+    Test #: 1
+    Action Taken:  Registered under temp email.
+    ﻿"After" State: Email received asking for confirmation.
+    ﻿Test Result: Successful
+
+1.2.4- I want to be able to see my order history;
+    Test #: 1
+    Action Taken:  Pressed profile page as registered user.
+    ﻿"After" State: Order history shown.
+    ﻿Test Result: Successful
+
+1.3.1- I want to add, edit and remove projects;
+    
+     Test #: 1
+    Action Taken: Tried going to add page.
+    ﻿"After" State: Empty box ready for user input on one of the fields
+    ﻿Test Result: Successful
+
+     Test #: 2
+    Action Taken: Tried submiting a new project on add page.
+    ﻿"After" State: New project added
+    ﻿Test Result: Successful
+
+     Test #: 3
+    Action Taken: Tried pressing Edit button
+    ﻿"After" State: Edit page open with project fields.
+    ﻿Test Result: Successful
+
+     Test #: 4
+    Action Taken: Tried submiting edited info.
+    ﻿"After" State: Details were edited successfully
+    ﻿Test Result: Successful
+  
+     Test #: 5
+    Action Taken: Tried deleting a project
+    ﻿"After" State: Projected was deleted message and my project page opens without deleted review.
+    ﻿Test Result: Successful
+
+## Further Testing
+
+    Website was tested on Firefox and Chrome on all diferent sizes from mobile to desktop.
+    Friends and family tested and critiqued website which helped with some last few design details.
+
+## Credits
+
+### Code 
+
+Website was made based on the walkthrough project provided by code institute on boutique ado.
+
+
+### Content 
+
+    All content was written by the developer or taken/adapted from walkthrough project.
+
+### Media
+
+    Homepage is from the google images and all other images where taken from bootstrap themes.
+
+## Deployment 
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account so that we can modify it without being worried about changing the orinal repository.
+
+    1-To do this log in to GitHub and locate the GitHub Repository;
+
+    2-At the top of the Repository just above the "Settings" Button press the "Fork" Button;
+
+    3-You will now have a forked vertion of the original repository in your GitHub account;
+
+### Making a Local Clone
+
+    1-Log in to GitHub and locate the GitHub Repository;
+
+    2-Under the repository name, click "Clone or download";
+
+    3-To clone the repository using HTTPS, under "Clone with HTTPS", copy the link;
+
+    4-Open Git Bash;
+
+    5-Change the current working directory to the location where you want the cloned directory to be made;
+
+    6-Type git clone, and then paste the URL you copied previously;
+
+    7-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+    8-Press Enter. Your local clone will be created.
+
+## Acknoledgements
+
+My Mentor for guiding me and making sure I dont skip important steps. Special thanks to code institute online tutors that helped me through all this course. I work for NHS(englands health service) and try how to code part-time. So without the tutor helping me solve and teach me I would never have been able to complete my projects. So THANK YOU!
